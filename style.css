@@ -1,0 +1,78 @@
+/* Background Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #444; /* Neutral gray background for visibility */
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Container Styling */
+.container {
+    padding: 50px;
+}
+
+/* Kenyan Flag Color Text Decoration with Wavy Animation */
+.flag-text span {
+    display: inline-block;
+    animation: wavyText 2s infinite ease-in-out;
+}
+
+/* Stagger the animation start time for each letter */
+.flag-text span:nth-child(1) { animation-delay: 0s; }
+.flag-text span:nth-child(2) { animation-delay: 0.1s; }
+.flag-text span:nth-child(3) { animation-delay: 0.2s; }
+.flag-text span:nth-child(4) { animation-delay: 0.3s; }
+.flag-text span:nth-child(5) { animation-delay: 0.4s; }
+.flag-text span:nth-child(6) { animation-delay: 0.5s; }
+.flag-text span:nth-child(7) { animation-delay: 0.6s; }
+.flag-text span:nth-child(8) { animation-delay: 0.7s; }
+
+/* Wavy Animation */
+@keyframes wavyText {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background: linear-gradient(to right, #FF0000, #006400, #FFFFFF);
+    color: black;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(to right, #006400, #FF0000, #FFFFFF);
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #333;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px -3px 5px rgba(255, 255, 255, 0.2);
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
